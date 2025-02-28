@@ -1,0 +1,123 @@
+/* Prime Video Dark Theme with Gradient Background and Animations */
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1a73e8); /* Gradient Background */
+  color: #fff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 30px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 36px -5px #1a73e8;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #333;
+}
+
+.text-input textarea {
+  height: 250px;
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  background: #1e293b;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 0.3rem;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.text-input textarea:hover {
+  background: #273c56;
+}
+
+.text-input textarea::placeholder {
+  color: #999;
+}
+
+.controls,
+li,
+.icons,
+.icons ion-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+  border-top: 1px solid #333;
+}
+
+.controls .row select {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: #333;
+  padding-left: 5px;
+  border-radius: 5px;
+}
+
+.container button {
+  width: 100%;
+  padding: 14px;
+  outline: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  background: #1a73e8;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.container button:hover {
+  background: #1664d0;
+  transform: scale(1.05);
+}
+
+@media (max-width: 660px) {
+  .container {
+    padding: 20px;
+  }
+  .text-input textarea {
+    height: 200px;
+  }
+  .container button {
+    padding: 13px;
+    font-size: 1.2rem;
+  }
+}
